@@ -1,0 +1,22 @@
+data:
+  source:
+    - s3://seelabutk-data/climate_gen3|UGRD-1yr-720x361-fcst0-*of*_*of*_*of*_*of*.dat
+
+
+#docker:
+#  port: 6688
+#  replicas: 16
+
+
+aws:
+  bucket: {{YOUR_UNIQUE_S3_BUCKET_NAME}}
+  # https: true
+  region: us-east-2
+  replicas: 32
+  managers:
+    'm5.8xlarge': 1
+
+
+braid:
+  directory: {{/path/to/this/directory}}/braid
+  file_pattern: UGRD-1yr-720x361-fcst0-*of*_*of*_*of*_*of*.dat
