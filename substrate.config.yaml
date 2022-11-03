@@ -8,13 +8,13 @@ data:
 #  replicas: 16
 
 
-aws:
-  bucket: {{YOUR_UNIQUE_S3_BUCKET_NAME}}
-  # https: true
-  region: us-east-2
-  replicas: 32
-  managers:
-    'm5.8xlarge': 1
+#aws:
+#  bucket: {{YOUR_UNIQUE_S3_BUCKET_NAME}}
+#  # https: true
+#  region: us-east-2
+#  replicas: 32
+#  managers:
+#    'm5.8xlarge': 1
 
 
 braid:
